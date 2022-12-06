@@ -1,0 +1,57 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:o="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options">
+
+
+    <DrawingBrush
+        x:Key="SnowBGDrawingBrush"
+        o:Freeze="True"
+        Opacity=".6"
+        RenderOptions.CacheInvalidationThresholdMaximum="2.0"
+        RenderOptions.CacheInvalidationThresholdMinimum="0.5"
+        RenderOptions.CachingHint="Cache"
+        Stretch="Uniform"
+        TileMode="Tile"
+        Viewport="0,0,1080,1080"
+        ViewportUnits="Absolute">
+        <DrawingBrush.Drawing>
+            <ImageDrawing
+                o:Freeze="True"
+                ImageSource="pack://application:,,,/SnowMan;component/Res/Image/MerryChristmas/SnowBG.png"
+                Rect="0,0,1080,1080" />
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+    <DrawingBrush
+        x:Key="GoldTopDrawingBrush"
+        o:Freeze="True"
+        Opacity="0.8"
+        RenderOptions.CacheInvalidationThresholdMaximum="2.0"
+        RenderOptions.CacheInvalidationThresholdMinimum="0.5"
+        RenderOptions.CachingHint="Cache"
+        Stretch="Uniform"
+        TileMode="Tile"
+        Viewport="0,0,300,300"
+        ViewportUnits="Absolute">
+        <DrawingBrush.Drawing>
+            <ImageDrawing
+                o:Freeze="True"
+                ImageSource="pack://application:,,,/SnowMan;component/Res/Image/MerryChristmas/GoldTop.png"
+                Rect="0,0,200,200" />
+        </DrawingBrush.Drawing>
+    </DrawingBrush>
+    <ImageSource x:Key="MerryChristmas">pack://application:,,,/SnowMan;component/Res/Image/MerryChristmas/MerryChristmas.png</ImageSource>
+    <ImageSource x:Key="SnowMan">pack://application:,,,/SnowMan;component/Res/Image/MerryChristmas/SnowMan.png</ImageSource>
+    <ImageSource x:Key="MiluDeer">pack://application:,,,/SnowMan;component/Res/Image/MerryChristmas/MiluDeer.png</ImageSource>
+    <ImageSource x:Key="SantaClaus">pack://application:,,,/SnowMan;component/Res/Image/MerryChristmas/SantaClaus.png</ImageSource>
+    <ImageSource x:Key="LittleTrain">pack://application:,,,/SnowMan;component/Res/Image/MerryChristmas/LittleTrain.png</ImageSource>
+    <ImageSource x:Key="SantaClaus2">pack://application:,,,/SnowMan;component/Res/Image/MerryChristmas/SantaClaus2.png</ImageSource>
+    <ImageSource x:Key="SnowMan2">pack://application:,,,/SnowMan;component/Res/Image/MerryChristmas/SnowMan2.png</ImageSource>
+    <ImageSource x:Key="Happer">pack://application:,,,/SnowMan;component/Res/Image/MerryChristmas/Happer.png</ImageSource>
+    <ImageSource x:Key="SantaClausGift">pack://application:,,,/SnowMan;component/Res/Image/MerryChristmas/SantaClausGift.png</ImageSource>
+    <ImageSource x:Key="SantaClaus3">pack://application:,,,/SnowMan;component/Res/Image/MerryChristmas/SantaClaus3.png</ImageSource>
+    <ImageSource x:Key="ChristmasCrystalBall">pack://application:,,,/SnowMan;component/Res/Image/MerryChristmas/ChristmasCrystalBall.png</ImageSource>
+    <ImageSource x:Key="Center">pack://application:,,,/SnowMan;component/Res/Image/MerryChristmas/Center.png</ImageSource>
+    <ImageSource x:Key="Tree">pack://application:,,,/SnowMan;component/Res/Image/MerryChristmas/Tree.png</ImageSource>
+
+</ResourceDictionary>

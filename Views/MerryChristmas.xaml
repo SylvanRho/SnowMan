@@ -1,0 +1,152 @@
+﻿<UserControl
+    x:Class="SnowMan.Views.MerryChristmas"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:behaviors="clr-namespace:SnowMan.Behaviors"
+    xmlns:controls="clr-namespace:SnowMan.Controls.WindowControl"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:hc="https://handyorg.github.io/handycontrol"
+    xmlns:local="clr-namespace:SnowMan.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="1080"
+    d:DesignWidth="1920"
+    mc:Ignorable="d">
+    <Grid Width="1920" Height="1080">
+        <Grid Background="{StaticResource SnowBGDrawingBrush}">
+            <Image Margin="0,0,0,200" Source="{StaticResource Center}" />
+            <Grid
+                Height="200"
+                VerticalAlignment="Top"
+                Background="{StaticResource GoldTopDrawingBrush}" />
+
+
+
+            <Grid VerticalAlignment="Bottom">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="auto" />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Image
+                        Grid.Column="0"
+                        Width="150"
+                        Margin="0,0,0,0"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Bottom"
+                        Source="{StaticResource SnowMan2}" />
+                    <Image
+                        Grid.Column="1"
+                        Height="200"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Bottom"
+                        RenderTransformOrigin="0.5,0.5"
+                        Source="{StaticResource SnowMan}"
+                        Stretch="Uniform">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform />
+                                <SkewTransform />
+                                <RotateTransform Angle="9.462" />
+                                <TranslateTransform />
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                    <Image
+                        Grid.Row="2"
+                        Height="300"
+                        VerticalAlignment="Bottom"
+                        Source="{StaticResource SantaClaus}"
+                        Stretch="Uniform" />
+                </Grid>
+
+                <Image
+                    Grid.Column="1"
+                    Height="200"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Bottom"
+                    RenderTransformOrigin="0.5,0.5"
+                    Source="{StaticResource SnowMan}"
+                    Stretch="Uniform">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform />
+                            <SkewTransform />
+                            <RotateTransform Angle="-19.983" />
+                            <TranslateTransform />
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Image
+                    Grid.Column="2"
+                    Height="200"
+                    VerticalAlignment="Bottom"
+                    Source="{StaticResource ChristmasCrystalBall}" />
+                <Image
+                    Grid.Column="9"
+                    Height="300"
+                    VerticalAlignment="Bottom"
+                    RenderTransformOrigin="0.5,0.5"
+                    Source="{StaticResource MiluDeer}"
+                    Stretch="Uniform">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform ScaleX="-1" ScaleY="1" />
+                            <SkewTransform AngleX="0" AngleY="0" />
+                            <RotateTransform Angle="0" />
+                            <TranslateTransform />
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Image
+                    Grid.Column="6"
+                    Height="150"
+                    VerticalAlignment="Bottom"
+                    Source="{StaticResource SantaClaus3}" />
+                <Image
+                    Grid.Column="5"
+                    Height="400"
+                    Margin="50,0"
+                    VerticalAlignment="Bottom"
+                    Source="{StaticResource Happer}" />
+                <Image
+                    Grid.Column="7"
+                    Width="250"
+                    VerticalAlignment="Bottom"
+                    Source="{StaticResource SantaClausGift}" />
+                <Image
+                    Grid.Column="9"
+                    Width="150"
+                    Margin="0,0,0,35"
+                    Source="{StaticResource SantaClaus2}" />
+            </Grid>
+
+            <Image
+                Width="350"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Center"
+                Source="{StaticResource LittleTrain}"
+                Stretch="Uniform" />
+            <Image
+                Width="350"
+                Margin="0,250,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Source="{StaticResource Tree}"
+                Stretch="Uniform" />
+        </Grid>
+
+    </Grid>
+</UserControl>
